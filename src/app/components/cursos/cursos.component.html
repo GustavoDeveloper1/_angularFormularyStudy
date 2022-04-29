@@ -18,24 +18,31 @@
     </svg></button>
   </header>
   <div class="container">
-    <h1>Lista De Cursos</h1>
+    <h1>Lista De Usuarios</h1>
 
     <table class="table table-success table-striped">
       <thead>
           <th>Id</th>
           <th>Nome</th>
-          <th>Preço</th>
+          <th>username</th>
+          <th>email</th>
+          <th>phone</th>
+          <th>website</th>
       </thead>
       <tbody>
-        <tr>
-
+        <tr *ngFor="let curso of cursos">
+          {{curso.name}}
+          <td>{{curso.id}}</td>
+          <!-- <td>{{curso.name}}</td> -->
         </tr>
 
       </tbody>
     </table>
   
-  
-    <router-outlet></router-outlet>
+  <br><br><br><br><br>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
 
   </div>
 

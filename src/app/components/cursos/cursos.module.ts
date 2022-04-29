@@ -1,4 +1,3 @@
-import { CursosService } from './../../services/cursos.service';
 import { RouterModule } from '@angular/router';
 import { CursosRoutingModule } from './cursos.routing.module';
 
@@ -6,9 +5,9 @@ import { CursosComponent } from './cursos.component'
 import { NgModule } from "@angular/core";
 import { CommonModule } from '@angular/common';
 
-import { FormsModule } from '@angular/forms';
 import { CursosCreatedComponent } from './cursos-created/cursos-created.component';
 import { CursosEditComponent } from './cursos-edit/cursos-edit.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +16,7 @@ import { CursosEditComponent } from './cursos-edit/cursos-edit.component';
         CommonModule,
         CursosRoutingModule,
         RouterModule,
-
+        FormsModule
     ],
     exports: [],
     declarations: [
@@ -26,7 +25,7 @@ import { CursosEditComponent } from './cursos-edit/cursos-edit.component';
         CursosEditComponent
 
     ],
-    providers: [CursosService, ],
+    providers: [ ],
 
 })
 

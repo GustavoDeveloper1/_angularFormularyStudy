@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field'
+import { CursosService } from './services/cursos.service';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import {MatFormFieldModule} from '@angular/material/form-field'
     MatFormFieldModule,
     
   ],
-  providers: [],
+  providers: [CursosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
